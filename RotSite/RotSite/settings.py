@@ -58,8 +58,8 @@ TEMPLATES = [
         #Remember to tell the engine where to look for template
         #For example in wich directory there is the base template
         'DIRS': [
-            #Dorectpry containing the base template
-            "RotSite/templates/RotSite"
+            #Directory containing the base template
+            "templates/RotSite"
         ],
         'APP_DIRS': True,
         'OPTIONS': {
