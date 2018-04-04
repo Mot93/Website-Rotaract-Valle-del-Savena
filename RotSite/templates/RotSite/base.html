@@ -23,7 +23,10 @@
         Linking the style.css file
         The path automatically goes into the static folder, the rest is up to you
     -->
-    <link rel="stylesheet" type="text/css" href="{% static 'RotSite/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base_style.css' %}">
+
+    <!--additional_links is used to add link when required by an app-->
+    {% block additional_links %}{% endblock %}
 
     <!--
         viewport introduced for a better mobile experience 
