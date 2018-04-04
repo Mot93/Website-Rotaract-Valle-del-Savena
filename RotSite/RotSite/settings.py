@@ -55,7 +55,12 @@ ROOT_URLCONF = 'RotSite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #Remember to tell the engine where to look for template
+        #For example in wich directory there is the base template
+        'DIRS': [
+            #Dorectpry containing the base template
+            "RotSite/templates/RotSite"
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
