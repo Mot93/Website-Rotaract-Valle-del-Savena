@@ -19,8 +19,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!--Linking the style.css file-->
-    <link rel="stylesheet" href="{% static '/RotSite/css/styles.css' %}">
+    <!--
+        Linking the style.css file
+        The path automatically goes into the static folder, the rest is up to you
+    -->
+    <link rel="stylesheet" type="text/css" href="{% static 'RotSite/style.css' %}">
 
     <!--
         viewport introduced for a better mobile experience 
