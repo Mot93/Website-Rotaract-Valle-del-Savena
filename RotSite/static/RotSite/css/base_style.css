@@ -2,10 +2,25 @@
  * CSS fie related to the base.html file
  * Any css file insered in the additional_links with the <link> tag will override thsi file
  * Reminder: #id .class 
+ *
+ * To stick the footer to the bottom:
+ * 1) Fix the height of the footer
+ * 2) Insert a "wrapper" (custom_wrapper) in the body and give it max height - footer heigth
  */
+
+html, body {
+    height: 100%;
+}
 
 footer {
     text-align: center;
+    height: 80px;
+    padding: 20px;
+}
+
+#custom_wrapper{
+    min-height: 100%;
+    margin-bottom: -80px;
 }
 
 #custom_content {
