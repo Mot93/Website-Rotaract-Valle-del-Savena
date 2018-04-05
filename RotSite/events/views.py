@@ -6,8 +6,11 @@ from django.http import Http404
 from .models import Events
 
 def index(request):
+    latest_event_list = Events.objects.order_by('-event_date')[:5]
     template = loader.get_template('events/index.html')
-    context = {}
+    context = {
+        'latest_event_list':latest_event_list
+    }
     return HttpResponse(template.render(context, request))
 
 def detail(request, event_id):

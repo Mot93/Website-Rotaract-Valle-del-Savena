@@ -1,5 +1,15 @@
-{% extends 'base.html' %}
+<!--{% extends 'base.html' %}-->
+
+{% load static %}
 
 {% block content %}
-    index page for events
+    {% if latest_event_list %}
+        <ul>
+            {% for event in latest_event_list %}
+                <li><a href="{% url 'events:detail' event.id %}">{{ event.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No event are scheduled.</p>
+    {% endif %}
 {% endblock %}
