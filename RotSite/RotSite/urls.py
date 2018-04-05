@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # url for homepage
     path('', include('homepage.urls')),
-    # url for polls
+    # url for other apps
     path('polls/', include('polls.urls')),
+    path('events/', include('events.urls'))
 ]
