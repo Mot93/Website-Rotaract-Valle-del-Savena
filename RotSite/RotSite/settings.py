@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
+    'homepage.apps.HomepageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,5 +130,5 @@ STATIC_URL = '/static/'
 # The root is inside the outer RotSite
 STATICFILES_DIRS = [
     #This folder has been setup for the generic css file
-    'static/RotSite',
+    'static',
 ]

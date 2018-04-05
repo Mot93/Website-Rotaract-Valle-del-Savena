@@ -1,0 +1,17 @@
+/*
+ * CSS fie related to the base.html file
+ * Any css file insered in the additional_links with the <link> tag will override thsi file
+ * Reminder: #id .class 
+ */
+
+footer {
+    text-align: center;
+}
+
+#custom_content {
+    padding: 20px;
+}
+
+.custom_navbar_footer{
+    background-color: hotpink;
+}
